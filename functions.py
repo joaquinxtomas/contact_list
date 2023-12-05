@@ -5,9 +5,8 @@ def validar_numero():
     
     while True:
         numero = input("Ingrese el numero: ")
-        
         if re.match(patron,numero):
-            return numero
+            return int(numero)
         else:
             print("Numero inválido!\n")
             
